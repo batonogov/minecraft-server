@@ -1,21 +1,12 @@
 # СЕРВЕР MINECRAFT: JAVA EDITION
 
-Версия сервера 1.16.2 
-Сервер MINECRAFT: Java Edition внутри Docker контейнера.
+Версия сервера MINECRAFT: Java Edition 1.16.2 
+Сервер MINECRAFT: Java Edition внутри Docker контейнера + cron.
 
-**Запуск из готового образа:**
-
-```
-docker run -p 25565:25565 --name minecraft-server batonogov/minecraft-server
-```
-
-При необходимости изменить параметры server/server.properties, необходимо собрать образ самостоятельно.
-
-**Сборка образа из dockerfile и его запуск:**
+**Запуск:**
 
 ```
-docker build -t minecraft-server .
-docker run -p 25565:25565 --name minecraft-server minecraft-server
+bash up.sh
 ```
 
 [Minecraft.net](https://www.minecraft.net/ru-ru/download/server) | 
