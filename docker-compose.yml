@@ -8,4 +8,6 @@ services:
       - ./cron.reboot:/etc/cron.reboot
       - ./logs:/var/log/cron
       - ./minecraft_server:/minecraft_server/
+    ports: 
+      - 25565:25565
     restart: unless-stopped:0
