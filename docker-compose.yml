@@ -1,0 +1,11 @@
+version: '2.0'
+
+services:
+  minecraft:
+    build: .
+    container_name: minecraft-server
+    volumes:
+      - ./cron.reboot:/etc/cron.reboot
+      - ./logs:/var/log/cron
+      - ./minecraft_server:/minecraft_server/
+    restart: unless-stopped:0
