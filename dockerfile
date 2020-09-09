@@ -1,11 +1,9 @@
-FROM batonogov/cron:openjdk
+FROM batonogov/cron
 
 LABEL maintainer="batonogov@icloud.com"
 
 RUN apt update && \
-    apt upgrade -y
-
-RUN apt install \
+    apt install \
         wget \
         -y && \
     apt clean
