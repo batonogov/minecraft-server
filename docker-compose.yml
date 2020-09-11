@@ -5,6 +5,10 @@ services:
     build: .
     container_name: minecraft-server
     volumes:
+      - ./cron.hourly:/etc/cron.hourly
+      - ./cron.daily:/etc/cron.daily
+      - ./cron.weekly:/etc/cron.weekly
+      - ./cron.monthly:/etc/cron.monthly
       - ./cron.reboot:/etc/cron.reboot
       - ./logs:/var/log/cron
       - ./minecraft_server:/minecraft_server/
