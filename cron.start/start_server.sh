@@ -1,4 +1,4 @@
-if [ -f minecraft_server/server.jar ]
+if ! [ -f minecraft_server/server.jar ]
 then
     cd /minecraft_server/ 
     java -Xmx2048M -Xms2048M -jar server.jar nogui
