@@ -1,4 +1,4 @@
-FROM batonogov/cron:openjdk
+FROM batonogov/cron:openjdk-16
 
 LABEL maintainer="batonogov@icloud.com"
 

@@ -1,4 +1,4 @@
-logs/*
+logs
 minecraft_server/*
 !minecraft_server/eula.txt
 !minecraft_server/server.properties
